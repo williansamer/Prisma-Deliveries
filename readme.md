@@ -30,4 +30,17 @@ Ao criar o schema, rode no terminal..
 > yarn prisma migrate dev (para criar o banco de dados)
 > yarn prisma format (para formatar o banco de dados)
 
+_________________________________________________
+### Crie um script para rodar o projeto:
+
+"scripts": {
+  "dev": "ts-node-dev --exit-child --transpile-only --ignore-watch node_modules src/server.ts"
+},
+____________________________________________________________________
+## Criando Clients e Deliveryman:
+> Crie o UseCase e Controller(que são as regras de negócio).
+> Crie as rotas.
+> Teste no insomnia.
+> Depois de pronto, rode o "yarn prisma studio" para verificar se deu tudo certo.
+
 ____________________________________________________________________
