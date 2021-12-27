@@ -2,6 +2,7 @@
 
 declare namespace Express{ //Pegando o namespace Express
   export interface Request{ //Pegando o Request do Express e adicionando um novo atributo
-    id_client: string //Definindo o atributo id_client que será do tipo string
+    id_client: string, //Definindo o atributo id_client que será do tipo string
+    id_deliveryman: string
   }
 }
