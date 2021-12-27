@@ -18,7 +18,7 @@ export class CreateDeliverymanUseCase{
     })
 
     if(deliverymanExist){
-      return new Error("Deliveryman already exists!")
+      throw new Error("Deliveryman already exists!")
     }
 
     const hashPassword = await hash(password, 10);

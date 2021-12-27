@@ -10,8 +10,8 @@ const createDeliverymanController = new CreateDeliverymanController();
 const authenticateClientController = new AuthenticateClientController();
 const authenticateDeliverymanController = new AuthenticateDeliverymanController();
 
-routes.post("/authclient/", authenticateClientController.handle);
-routes.post("/authdeliveryman/", authenticateDeliverymanController.handle);
+routes.post("/client/authenticate/", authenticateClientController.handle);
+routes.post("/deliveryman/authenticate/", authenticateDeliverymanController.handle);
 
 routes.post("/client/", createClientController.handle)
 routes.post("/deliveryman/", createDeliverymanController.handle)

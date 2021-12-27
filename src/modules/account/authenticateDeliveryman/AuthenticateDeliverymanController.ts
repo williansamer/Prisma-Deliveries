@@ -10,11 +10,7 @@ export class AuthenticateDeliverymanController{
     const result = await authenticateDeliverymanUseCase.execute({
       username, password
     })
-
-    if(result instanceof Error){
-      return response.status(400).json(result.message)
-    }
-
+    
     return response.json(result)
   }
 }

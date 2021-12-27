@@ -19,7 +19,7 @@ export class CreateClientUseCase {
     }); 
 
     if (clientExist) {
-      return new Error("Client already exists!");
+      throw new Error("Client already exists!");
     }
 
     //Criptografar o password
