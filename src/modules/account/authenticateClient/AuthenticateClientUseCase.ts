@@ -1,7 +1,9 @@
+import * as dotenv from "dotenv";
 import { sign } from 'jsonwebtoken';
 import { compare } from 'bcrypt';
 import { prisma } from '../../../database/prismaClient';
 
+dotenv.config();
 interface IAuthClient{
   username: string
   password: string
@@ -25,7 +27,7 @@ export class AuthenticateClientUseCase{
       throw new Error("Password incorrect!")
     }
 
-    const token = sign({username}, "9ds8fyd1s5af5ydf4u23h4u23b4jh4u", {
+    const token = sign({username}, process.env.SECRET_CLIENT, {
       expiresIn: "1d",
       subject: clientExist.id
     });

@@ -1,5 +1,15 @@
 # PROJETO - ENTREGA
 
+#### API COMPLETO de Entrega utilizando todos os fundamentos de criação, busca e atualização de entregas, clientes e entregadores.
+#### Utilizado também validações com o Json Web Token, criptografou dados do password e tratativas de erros. Além de usar um framework excelente que é o Prisma com o Banco de Dados PostgreSQL.
+
+## Ferramentas Utilizadas:
+- [Prisma](https://www.prisma.io/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [JWT](https://jwt.io/)
+- [Express](https://expressjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [NodeJS](https://nodejs.org/)
 
 ____________________________________________________________________
 ## Estrutura do projeto:
