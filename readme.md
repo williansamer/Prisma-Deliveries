@@ -2,7 +2,7 @@
 
 #### API COMPLETO de Entrega utilizando todos os fundamentos de criação, busca e atualização de entregas, clientes e entregadores.
 
-[api-entrega](api-entrega.png)
+![api-entrega](api-entrega.png)
 #### Utilizado também o Prisma que é um ótimo framework de criação de tabelas e Json Web Token para validação, criptografado os dados do password e feito as tratativas de erros. Além de usar o Banco de Dados PostgreSQL.
 
 ## Ferramentas Utilizadas:
